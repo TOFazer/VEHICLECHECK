@@ -5,6 +5,9 @@
 **Statut :** Spécification validée — avant développement  
 **Produit :** FiveM Automotive Diagnostic System
 
+> **Environnement de développement :** suivre [`dev-server/README.md`](dev-server/README.md).
+> Aucun développement fonctionnel ne doit commencer avant que le serveur FiveM de test et ses dépendances soient opérationnels.
+
 ---
 
 # 1. Présentation du projet
