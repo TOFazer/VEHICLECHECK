@@ -2,11 +2,11 @@
 # OVERX — VEHICLECHECK
 ## Cahier des charges technique et plan d'implémentation
 **Version :** 1.0.0  
-**Statut :** Spécification validée — avant développement  
+**Statut :** Cahier des charges + fondations techniques 0.1.0 (prototype non testé en jeu)
 **Produit :** FiveM Automotive Diagnostic System
 
 > **Environnement de développement :** suivre [`dev-server/README.md`](dev-server/README.md).
-> Aucun développement fonctionnel ne doit commencer avant que le serveur FiveM de test et ses dépendances soient opérationnels.
+> La pile FiveM n'est pas disponible dans cet environnement : le code livré constitue uniquement les fondations statiques et doit être validé sur un FXServer avant toute fonctionnalité métier. Voir [`SUIVI_PROJET.md`](SUIVI_PROJET.md) pour l'état détaillé.
 
 ---
 
