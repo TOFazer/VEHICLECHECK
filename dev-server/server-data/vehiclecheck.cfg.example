@@ -1,0 +1,26 @@
+# Extrait à intégrer dans le server.cfg généré par txAdmin.
+# Ce fichier n'est pas un server.cfg complet.
+# Remplacer les marqueurs localement et ne jamais versionner de clé ou mot de passe réel.
+
+sv_hostname "VehicleCheck - Développement"
+sets sv_projectName "VehicleCheck"
+sets sv_projectDesc "Environnement privé de test VehicleCheck"
+sv_maxclients 8
+
+# Obtenir la clé depuis le portail Cfx.re et la garder dans le server.cfg local ignoré par Git.
+sv_licenseKey "REPLACE_WITH_YOUR_CFX_LICENSE_KEY"
+
+# Créer cette base et cet utilisateur dans MySQL/MariaDB avant le démarrage.
+set mysql_connection_string "mysql://vehiclecheck:REPLACE_WITH_LOCAL_PASSWORD@127.0.0.1/vehiclecheck_dev?charset=utf8mb4"
+
+# Configuration ox_inventory pour ESX Legacy.
+setr inventory:framework "esx"
+setr inventory:target false
+
+# Ordre de démarrage recommandé pour les dépendances de test.
+ensure oxmysql
+ensure ox_lib
+ensure es_extended
+ensure ox_inventory
+
+# N'ajouter `ensure vehiclecheck` qu'après validation de l'environnement et création du manifest.

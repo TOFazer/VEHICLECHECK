@@ -1,0 +1,15 @@
+# Environnement local FiveM (artefacts, ressources téléchargées, données et secrets)
+/dev-server/FXServer/
+/dev-server/server-data/*
+!/dev-server/server-data/vehiclecheck.cfg.example
+
+# Dépendances et résultats locaux
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+
+# Fichiers système
+.DS_Store
+Thumbs.db
